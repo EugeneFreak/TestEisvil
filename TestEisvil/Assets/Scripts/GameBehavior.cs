@@ -13,7 +13,7 @@ public class GameBehavior : MonoBehaviour
     private int _allEnemies = 0;
     private int _enemyStaticDestroyed = 0;
 	private int _enemyMobileDestroyed = 0;
-	private float _countdownTimer = 5;
+	private float _countdownTimer = 120;
 
     public int AllEnemies
     {
