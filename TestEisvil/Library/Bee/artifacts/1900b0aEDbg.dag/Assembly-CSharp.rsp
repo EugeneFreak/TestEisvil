@@ -366,6 +366,7 @@
 "Assets/Scripts/EnemyStaticBehavior.cs"
 "Assets/Scripts/GameBehavior.cs"
 "Assets/Scripts/PlayerBehavior.cs"
+"Assets/Scripts/QuestManager.cs"
 -langversion:9.0
 
 /deterministic

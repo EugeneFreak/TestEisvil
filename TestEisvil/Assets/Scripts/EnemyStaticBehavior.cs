@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyStaticBehavior : MonoBehaviour
@@ -16,9 +14,7 @@ public class EnemyStaticBehavior : MonoBehaviour
 		if (collision.gameObject.name == "Player")
 		{
 			Destroy(this.transform.gameObject);
-
-			gameManager.EnemyStaticDestroyed += 1;
-			gameManager.AllEnemies += 1;
+			gameManager.NotifyStaticEnemyDestroyed();
 		}
 	}
 }

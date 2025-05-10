@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -18,7 +17,6 @@ public class EnemyMobileBehavior : MonoBehaviour
 
 		InitializePatrolRoute();
 		gameManager = GameObject.Find("GameManager").GetComponent<GameBehavior>();
-
 		MoveToNextLocation();
 	}
 
@@ -35,9 +33,7 @@ public class EnemyMobileBehavior : MonoBehaviour
 		if (collision.gameObject.name == "Player")
 		{
 			Destroy(this.transform.gameObject);
-
-			gameManager.EnemyMobileDestroyed += 1;
-			gameManager.AllEnemies += 1;
+			gameManager.NotifyMobileEnemyDestroyed();
 		}
 	}
 

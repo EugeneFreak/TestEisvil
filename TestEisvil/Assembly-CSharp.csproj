@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
     <Compile Include="Assets\Scripts\EnemyMobileBehavior.cs" />
+    <Compile Include="Assets\Scripts\QuestManager.cs" />
     <Compile Include="Assets\Scripts\GameBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerBehavior.cs" />
     <Compile Include="Assets\Scripts\EnemyStaticBehavior.cs" />
